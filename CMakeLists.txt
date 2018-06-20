@@ -63,6 +63,7 @@ find_package(Boost REQUIRED filesystem program_options)
 
 # protobuf
 if(WITH_PROTOBUF)
+	include(FindProtobuf)
 	find_package(protobuf)
 endif()
 
